@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF=8">
+        <title>Project Origin Meeting Minutes</title>
+    </head>
+    <body>
+        <nav>
+            <ol>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Meeting Minutes</a></li>
+                <li>October 1, 2021</li>
+            </ol>
+        </nav>
+
+        <header class="page-header">
+            <h1>Project Origin Starter Brainstorm</h1>
+        </header>
+
+        <main>
+            <p>This page contains information on our meeting about <b>Project Origin</b>'s starting region.</p>
+        </main>
+
+        <div class="Meeting Info">
+        <section>
+            <h2>Date of Meeting</h2>
+            <p>October 1, 2021</p>
+        </section>
+
+        <section>
+            <h2>Attendance List</h2>
+            <ul>
+                <li>Kevin Lee</li>
+                <li>Joe Biden</li>
+                <li>Michael Jackson</li>
+                <li><i>Confucius</i>(Left midway)</li>
+            </ul>
+        </section>
+        </div>
+
+        <section>
+            <h2>Agenda</h2>
+            <p>Figure out the game's trajectory in the main questline. <br>
+                Outline the player's starting town and level progression.<br>
+                Find what essentials the player will need and the starting level range.
+            </p>
+        </section>
+
+        <hr>
+
+        <div class="Dicussion Topics">
+        <section>
+            <h2>Unfinished Topics From Previous Meeting</h2>
+            <ul>
+                <li>Finalize character classes</li>
+                <li>Set a level cap</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Important Topics To Discuss</h2>
+            <ul>
+                <li><b>Starting essentials</b></li>
+                <li>Basic enemies</li>
+                <li>Level range in starting town</li>
+            </ul>
+        </section>
+        </div>
+
+        <section>
+            <h2>Questions/Comments</h2>
+            <h3>Questions</h3>
+            <ul>
+                <li>Will we be giving starting players access to <span class="Keyword">transportation</span>?</li>
+            </ul>
+            <h3>Important Comments</h3>
+            <ul>
+                <li>Don't add too many <span class="Keyword">starting NPCs</span> in one town.</li>
+                <li><strong>Remember to add essential starting NPCs to the player's map.</strong></li>
+                <li>We <em>need</em> to make sure not to lock starting aspects behind monetization.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Concept Starting Town</h2>
+            <img class="Concept Town" src="Concept Town.png" width=50% height=50%>
+            <details>
+                <summary>Enhancers</summary>
+                Add weapon and armor enhancers. Maybe even accessories to enhance.
+            </details>
+        </section>
+
+        <section>
+            <h2>Meeting Video</h2>
+            <video controls width=250>
+                <source src="recording.mp4" type="video/mp4">
+            </video>
+            <h2>Meeting Audio</h2>
+            <audio controls src="recording.mp4"></audio>
+        </section>
+
+        <section>
+            <h2>Forms</h2>
+            <form>
+                <fieldset>
+                    <legend>Choose a color [radio]</legend>
+
+                    <input type="radio" id="red" name="color">
+                    <label for="red">Red</label><br/>
+
+                    <input type="radio" id="blue" name="color">
+                    <label for="blue">Blue</label><br/>
+
+                    <input type="radio" id="green" name="color">
+                    <label for="green">Green</label><br/>
+                </fieldset>
+            </form>
+
+            <form>
+                <fieldset>
+                    <legend>Which animals do you like? [checkbox]</legend>
+
+                    <input type="checkbox" id="cat" name="animal">
+                    <label for="cat">Cat</label>
+
+                    <input type="checkbox" id="dog" name="animal">
+                    <label for="dog">Dog</label>
+
+                    <input type="checkbox" id="fish" name="animal">
+                    <label for="fish">Fish</label>
+
+                    <input type="checkbox" id="bird" name="animal">
+                    <label for="bird">Bird</label>
+                </fieldset>
+            </form>
+
+            <label for="question">Ask a question!</label><br/>
+            <textarea id="question" name="question" rows=5 cols=33></textarea><br/>
+
+            <label for="npc name">Suggest an NPC Name [text]</label><br/>
+            <input type="text" id="npc name" name="npc name"><br>
+
+            <label for="date">When are you next available? [date]</label><br>
+            <input type="date" id="date" name="date"><br>
+
+            <label for="transportation">Choose a method of transportation</label><br>
+            <select name="transportation" id="transportation">
+                <option value="">--Selection an option--</option>
+                <option value="car">Car</option>
+                <option value="plane">Plane</option>
+                <option value="boat">Boat</option>
+                <option vaue="bike">Bicycle</option>
+            </select><br>
+
+            <label for="where">Outisde or Inside?</label><br>
+            <input list="wheres" id="where" name="choose where">
+            <datalist id="wheres">
+                <option value="Inside">
+                <option value="Outside">
+            </datalist><br>
+
+            <button class="nuke" type="button">
+                LAUNCH NUKE
+            </button>
+        </section>
+    </body>
+</html>
