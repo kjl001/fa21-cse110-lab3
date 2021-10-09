@@ -4,25 +4,55 @@
         <meta charset="UTF-8">
         <title>Project Origin Meeting Minutes</title>
         <link href="favicon.png" rel="icon"/>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            /* meeting info dark mode */
+            .Meeting-Info {
+                background-color:black;
+                color:white;
+                display: inline-block;
+                min-width: 30vw;
+            }
+
+            /* make important topics bigger */
+            .important-topics li {
+                font-size: 1.5em;
+            }
+
+            /* set lists to have green box around */
+            .Discussion-Topics {
+                border: 2px solid green;
+                padding: 0.5cm 0.5cm 0.5cm 0.5cm;
+                border-radius: 5mm;
+            }
+
+            .navigation {
+                border-style: dotted;
+                border-color: black;
+                border-width: 1px;
+                position: fixed;
+                background-color: lightgray;
+                color: black;
+            }
+        </style>
     </head>
     <body>
         <nav>
-            <ol>
+            <ol class="navigation">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Meeting Minutes</a></li>
                 <li>October 1, 2021</li>
             </ol>
         </nav>
-
         <header class="page-header">
-            <h1>Project Origin Starter Brainstorm</h1>
+            <h1 style="background-color:hsl(64,61%,48%)">Project Origin Starter Brainstorm</h1>
         </header>
 
         <main>
             <p>This page contains information on our meeting about <b>Project Origin</b>'s starting region.</p>
         </main>
-
-        <div class="Meeting Info">
+    
+        <div class="Meeting-Info">
         <section>
             <h2>Date of Meeting</h2>
             <p>October 1, 2021</p>
@@ -49,10 +79,10 @@
 
         <hr>
 
-        <div class="Dicussion Topics">
+        <div class="Discussion-Topics">
         <section>
             <h2>Unfinished Topics From Previous Meeting</h2>
-            <ul>
+            <ul class = "prev-meeting">
                 <li>Finalize character classes</li>
                 <li>Set a level cap</li>
             </ul>
@@ -60,7 +90,7 @@
 
         <section>
             <h2>Important Topics To Discuss</h2>
-            <ul>
+            <ul class="important-topics">
                 <li><b>Starting essentials</b></li>
                 <li>Basic enemies</li>
                 <li>Level range in starting town</li>
@@ -68,23 +98,32 @@
         </section>
         </div>
 
-        <section>
+        <section class="q-c">
             <h2>Questions/Comments</h2>
+            <div class="questions">
             <h3>Questions</h3>
             <ul>
                 <li>Will we be giving starting players access to <span class="Keyword">transportation</span>?</li>
             </ul>
+            </div>
+
+            <div class="comments">
             <h3>Important Comments</h3>
             <ul>
                 <li>Don't add too many <span class="Keyword">starting NPCs</span> in one town.</li>
                 <li><strong>Remember to add essential starting NPCs to the player's map.</strong></li>
                 <li>We <em>need</em> to make sure not to lock starting aspects behind monetization.</li>
             </ul>
+            </div>
+
+            <div class="testing">
+                <h3>Testing Things</h3>
+            </div>
         </section>
 
         <section>
             <h2>Concept Starting Town</h2>
-            <img class="Concept Town" src="concept_town.png" alt="Concept art of starting town" width=1042 height=587>
+            <img class="Concept-Town" src="concept_town.png" alt="Concept art of starting town" width=1042 height=587>
             <details>
                 <summary>Enhancers</summary>
                 Add weapon and armor enhancers. Maybe even accessories to enhance.
@@ -92,32 +131,33 @@
         </section>
 
         <section>
-            <h2>Meeting Video</h2>
+            <h2 class="meeting-vid">Meeting Video</h2>
             <video controls width=250>
                 <source src="recording.mp4" type="video/mp4">
             </video>
             <h2>Meeting Audio</h2>
-            <audio controls src="recording.mp4"></audio>
+            <audio class="audio" controls src="recording.mp4"></audio>
         </section>
-
-        <section>
+        
+        <section class="forms">
             <h2>Forms</h2>
             <form>
-                <fieldset>
+                <fieldset class="color-q">
                     <legend>Choose a color [radio]</legend>
-
+                    
+                    <style>/* set colors */</style>
                     <input type="radio" id="red" name="color">
-                    <label for="red">Red</label><br/>
+                    <label for="red" style="color:rgb(255,0,0)">Red</label><br/>
 
                     <input type="radio" id="blue" name="color">
-                    <label for="blue">Blue</label><br/>
+                    <label for="blue" style="color:#0000FF">Blue</label><br/>
 
                     <input type="radio" id="green" name="color">
-                    <label for="green">Green</label><br/>
+                    <label for="green" style="color:green">Green</label><br/>
                 </fieldset>
             </form>
 
-            <form>
+            <form class="animal-q">
                 <fieldset>
                     <legend>Which animals do you like? [checkbox]</legend>
 
@@ -153,12 +193,14 @@
                 <option value="bike">Bicycle</option>
             </select><br>
 
-            <label for="where">Outisde or Inside?</label><br>
+            <div class="where-to">
+            <label for="where">Outside or Inside?</label><br>
             <input list="wheres" id="where" name="choose where">
             <datalist id="wheres">
                 <option value="Inside">
                 <option value="Outside">
             </datalist><br>
+            </div>
 
             <button class="nuke" type="button">
                 LAUNCH NUKE

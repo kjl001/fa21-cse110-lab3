@@ -1,0 +1,103 @@
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@font-face {
+    font-family: "header-font";
+    src: url(Akronim-Regular.ttf);
+}
+
+/* padding long */
+.important-topics {
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+    border-radius: 1vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+/* long margin */
+.questions {
+    border: 2px solid green;
+    border-radius: 5mm;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    margin-left: 20px;
+}
+
+/* short margin */
+.comments {
+    border: 2px solid purple;
+    border-radius: 5mm;
+    margin: 1px 1px 1px 20px;
+}
+
+/* center main title and give it a font */
+h1 {
+    text-decoration: underline;
+    text-align: center;
+    font-family: "header-font";
+}
+
+h3 {
+    max-width: 1cm;
+}
+
+/* hide nuke */
+.nuke {
+    display: none;
+}
+
+.Concept-Town {
+    height: 10cm;
+    width: 50vw;
+}
+
+/* configure the forms at bottom */
+.forms {
+    display: flex;
+    align-items: center;
+}
+
+.where-to {
+    position: relative;
+    left: 40px;
+}
+
+.animal-q:hover {
+    color: green;
+}
+
+.color-q:active {
+    color: red;
+    order: 2;
+    flex-grow: 2;
+}
+
+#red {
+    font-family: "header-font";
+}
+
+.q-c {
+    display: grid;
+}
+
+.questions {
+    grid-row-start: 2;
+}
+
+.comments {
+    grid-row-start: 3;
+}
+
+.testing {
+    grid-column: 3 / 10;
+    grid-row-start: 2;
+    justify-self: end;
+}
